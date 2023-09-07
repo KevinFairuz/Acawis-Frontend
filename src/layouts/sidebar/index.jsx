@@ -85,7 +85,7 @@ const Sidebar = () => {
     <div>
       <div
         onClick={() => setOpen(false)}
-        className={`md:hidden fixed inset-0 max-h-screen z-[998] bg-black/50 ${
+        className={`md:hidden fixed inset-0 max-h-screen z-[998] bg-white ${
           open ? "block" : "hidden"
         } `}
       ></div>
@@ -193,7 +193,7 @@ const Sidebar = () => {
           <IoIosArrowBack size={25} />
         </motion.div>
       </motion.div>
-      <div className="m-3 md:hidden  " onClick={() => setOpen(true)}>
+      <div className="m-5 md:hidden  " onClick={() => setOpen(true)}>
         <MdMenu size={25} />
       </div>
     </div>
