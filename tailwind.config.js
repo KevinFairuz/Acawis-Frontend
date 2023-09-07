@@ -7,8 +7,12 @@ module.exports = withMT({
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Montserrat: "Montserrat",
+      },
+    },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui","tailwind-scrollbar")],
 });
 
